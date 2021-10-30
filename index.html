@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Projeto Sorteador - Mateus </title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+     
+<style>
+    * {
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    body {
+        background-color: rgb(80, 24, 24);
+    }
+
+    .max-width {
+        max-width: 500px;
+        width: 100%;
+        padding: 10px;
+        box-sizing: border-box;
+        margin-top: 10%;
+        background-color: rgb(153, 146, 146);
+        box-shadow: 0 0 5px #FFF;
+        text-align: center;
+    }
+
+    h1 {
+        font-family: 'Arial black', monospace, arial;
+        margin-top: 20px;
+        color: white;
+    }
+
+    button {
+        padding: 10px;
+        border: none;
+        outline: none;
+        font-family: 'Arial black';
+        color: rgb(80, 24, 24);
+        font-size: 1.1em;
+        transition: all .5s;
+        cursor: pointer;
+        border-radius: 5px;
+        text-align: center;
+    }
+
+    button:hover {
+        background-color: #757272;
+    }
+
+    button:active {
+        background-color: rgb(80, 24, 24);
+    }
+
+    .color {
+        background-color: rgb(80, 24, 24);
+        color: white;
+        text-align: center;
+    }
+    .destaque {
+        background-color: rgb(80, 24, 24);
+        color: white;
+        text-align: center;
+        font-family: Arial Black;
+        font-size: xx-large;
+    }
+
+    .visor {
+        text-align: center;
+        font-family: 'Arial black';
+        font-size: 5.5em;
+    }
+
+</style>
+  <body>
+    <br><br><br><br>
+    <table>
+        <tr>
+            <td class = "destaque">SORTEADOR</td> 
+            </tr>
+    </table>
+    <table>
+        <tr>
+    <td class = "color">Valor mínimo</td> 
+    </tr>
+    <tr>
+    <td><input type="number" name="minimo" id="minimo"></td> 
+    </tr>
+    <tr>
+    <td class = "color">Valor máximo </td>
+    </tr>
+    <tr>
+    <td><input type="number" name="maximo" id="maximo"></td> 
+    </tr>
+    <tr>
+    <td class = "color"><button onclick="sorteio()">Sortear</button></td>
+    </tr>
+    <tr>
+    <td><h1 class = "visor" id="resultado"></h1></td>
+    </tr>
+        
+</table>
+    <script src="comando.js"></script>
+  </body>
